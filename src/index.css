@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.content {
+  padding: 40px 60px;
+  flex: 1;
+}
+
+/* FADE ANIMATIONS */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+/* SIDEBAR */
+
+.sidebar__button {
+  background: transparent;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  transition: 0.3s linear;
+}
+
+.sidebar {
+  min-width: 250px;
+  background: rgb(48, 48, 48);
+  padding: 20px;
+  color: white;
+  transition: 0.4s ease-in;
+  /* right: 0; */
+  margin-right: auto;
+}
+
+.sidebar-closed {
+  min-width: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar__listItem {
+  margin: 20px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar__listItem span {
+  white-space: nowrap;
+}
+
+.sidebar__icon {
+  margin: 0 15px 0 0;
+}
+
+.blocks{
+  padding: 10px;
+  font-weight: 700;
+}
+
+.dropped-item {
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: auto;
+}
+.dragging {
+  opacity: 0.5;
+}
